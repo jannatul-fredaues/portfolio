@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Animated Background Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  position: relative;
+  z-index: 10;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 28px;
+  color: #cfcfcf;
+  font-size: 14px;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* MOVING BACKGROUND IMAGE */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("bg.jpg"); /* 👈 your image */
+  background-size: 140%;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  animation: moveBg 25s linear infinite;
+  filter: blur(6px);
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+/* DARK OVERLAY */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  z-index: 2;
+}
+
+/* BACKGROUND ANIMATION */
+@keyframes moveBg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* CONTENT */
+.hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 800px;
+  padding: 40px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+
+.badge span {
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 72px;
+  font-weight: 400;
+  letter-spacing: 6px;
+  margin-bottom: 24px;
+}
+
+p {
+  font-size: 15px;
+  color: #bdbdbd;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 24px;
+  border: 1px solid #2a2a2a;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: #fff;
+  color: #000;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 44px;
+    letter-spacing: 3px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div><strong>Portfolio</strong></div>
+  <ul>
+    <li>Services</li>
+    <li>Projects</li>
+    <li>Certifications</li>
+    <li>Contact</li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="badge">
+      <span></span> Crafting Unique Brand Identities
+    </div>
+
+    <h1>WELCOME</h1>
+
+    <p>
+      Elevate your brand with custom identity and package design.
+      Showcase your story through bold visuals and strategic design solutions.
+    </p>
+
+    <div class="buttons">
+      <button class="btn primary">Get Started Now</button>
+
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
