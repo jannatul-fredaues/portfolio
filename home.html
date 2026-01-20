@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Engineer Portfolio</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 0;
+        }
+
+        /* Header */
+        .section-title {
+            text-align: center;
+            font-size: 42px;
+            font-weight: 600;
+            font-family: 'Cinzel', serif;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+
+        .underline {
+            height: 2px;
+            width: 100%;
+            background: #7c4dff;
+            margin-bottom: 40px;
+        }
+
+        /* Main layout */
+        .intro {
+            display: flex;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .left {
+            flex: 1.2;
+        }
+
+        .right {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .right img {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 6px;
+            filter: grayscale(100%);
+        }
+
+        /* Roman Heading */
+        .hello {
+            font-size: 68px;
+            font-weight: 700;
+            font-family: 'Cinzel', serif;
+            letter-spacing: 4px;
+            margin-bottom: 20px;
+        }
+
+        /* Text */
+        .description {
+            color: #cfcfcf;
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        /* Skill tags */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .skill {
+            padding: 8px 14px;
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 20px;
+            font-size: 13px;
+            color: #ddd;
+        }
+
+        /* Divider */
+        .divider {
+            height: 1px;
+            background: #222;
+            margin: 30px 0;
+        }
+
+        /* Experience */
+        .experience {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        .experience span {
+            display: block;
+            color: #777;
+            font-size: 12px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 900px) {
+            .intro {
+                flex-direction: column;
+            }
+
+            .hello {
+                font-size: 48px;
+            }
+
+            .experience {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="section-title">Introduction</div>
+    <div class="underline"></div>
+
+    <div class="intro">
+        <!-- Left Content -->
+        <div class="left">
+            <div class="hello">HELLO!</div>
+
+            <p class="description">
+                I'm Jannatul Ferdaues, an aspiring AI Engineer with a strong foundation in Python,
+                machine learning, and problem-solving. I enjoy building intelligent systems that
+                automate tasks, analyze data, and enhance user experiences. My interests include
+                artificial intelligence, deep learning, and voice-based AI applications.
+                I am continuously learning and applying modern AI techniques to real-world
+                problems, with the goal of becoming a skilled and impactful AI professional.
+            </p>
+
+            <div class="skills">
+                <div class="skill">Machine Learning</div>
+                <div class="skill">Deep Learning</div>
+                <div class="skill">Data Processing</div>
+                <div class="skill">Pandas</div>
+                <div class="skill">NumPy</div>
+                <div class="skill">Problem Solving</div>
+                <div class="skill">Python</div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="experience">
+                <div>
+                    <span>Freelance</span>
+                    Brand Designer
+                </div>
+                <div>
+                    <span>GreenLeaf Co</span>
+                    UrbanFit Studio
+                </div>
+                <div>
+                    <span>Currently</span>
+                    2023 – 24
+                </div>
+
+                <div>
+                    <span>Package Designer</span>
+                    GreenK Studio
+                </div>
+                <div>
+                    <span>Experience</span>
+                    Design Projects
+                </div>
+                <div>
+                    <span>Years</span>
+                    2020 – 22
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="right">
+            <!-- Replace with your image -->
+            <img src="4615.png" alt="Profile Image">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
