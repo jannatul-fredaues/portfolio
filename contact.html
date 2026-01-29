@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Let's Connect</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body{
+    background: radial-gradient(circle at top, #0f172a, #020617);
+    color:#fff;
+}
+
+/* NAVBAR */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+}
+
+.logo{
+    width:42px;
+    height:42px;
+    background:#1e293b;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+}
+
+nav a{
+    color:#cbd5f5;
+    margin:0 14px;
+    text-decoration:none;
+    font-size:15px;
+}
+
+nav button{
+    background:#e5f3ff;
+    border:none;
+    padding:8px 18px;
+    border-radius:20px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+/* MAIN */
+.contact{
+    padding:60px;
+}
+
+.contact h1{
+    font-size:48px;
+    text-align:center;
+    font-weight:700;
+}
+
+.contact h1 span{
+    color:#c7e7ff;
+}
+
+.subtitle{
+    text-align:center;
+    color:#94a3b8;
+    margin-top:10px;
+}
+
+/* GRID */
+.contact-container{
+    margin-top:60px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+/* LEFT */
+.contact-left h2{
+    font-size:26px;
+    margin-bottom:15px;
+}
+
+.contact-left p{
+    color:#94a3b8;
+    line-height:1.6;
+    margin-bottom:25px;
+}
+
+.social-card{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    padding:18px;
+    border-radius:14px;
+    margin-bottom:15px;
+    display:flex;
+    justify-content:space-between;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.social-card:hover{
+    background:rgba(255,255,255,0.1);
+}
+
+/* RIGHT */
+.glass{
+    background:rgba(255,255,255,0.06);
+    backdrop-filter:blur(14px);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:20px;
+    padding:30px;
+}
+
+.glass label{
+    display:block;
+    margin:15px 0 6px;
+    color:#cbd5f5;
+    font-size:14px;
+}
+
+.glass input,
+.glass textarea{
+    width:100%;
+    padding:14px;
+    border-radius:12px;
+    background:rgba(0,0,0,0.4);
+    border:1px solid rgba(255,255,255,0.1);
+    color:#fff;
+    outline:none;
+}
+
+.glass textarea{
+    min-height:120px;
+    resize:none;
+}
+
+.send-btn{
+    margin-top:22px;
+    width:100%;
+    padding:14px;
+    border-radius:30px;
+    background:#e5f3ff;
+    color:#000;
+    border:none;
+    font-weight:600;
+    cursor:pointer;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+    .navbar{
+        padding:20px 30px;
+    }
+    .contact{
+        padding:40px 30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">JF</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Testimonials</a>
+        <a href="#">Projects</a>
+        <a href="#">Gallery</a>
+        <button>Contact</button>
+    </nav>
+</header>
+
+<section class="contact">
+    <h1>Let's <span>Connect</span></h1>
+    <p class="subtitle">
+        Have a project in mind? Let's discuss how we can work together
+    </p>
+
+    <div class="contact-container">
+
+        <!-- LEFT -->
+        <div class="contact-left">
+            <h2>Connect with me</h2>
+            <p>
+                Feel free to reach out through any of these platforms.
+                I'm always open to discussing new projects, creative ideas,
+                or opportunities to be part of your vision.
+            </p>
+
+            <div class="social-card">GitHub <span>↗</span></div>
+            <div class="social-card">LinkedIn <span>↗</span></div>
+            <div class="social-card">Twitter <span>↗</span></div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="glass">
+            <label>Name</label>
+            <input type="text" placeholder="Your name">
+
+            <label>Email</label>
+            <input type="email" placeholder="your.email@example.com">
+
+            <label>Subject</label>
+            <input type="text" placeholder="What's this about?">
+
+            <label>Message</label>
+            <textarea placeholder="Tell me about your project..."></textarea>
+
+            <button class="send-btn">Send Message ✈</button>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
