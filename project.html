@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects Process</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #0f1215;
+    color: #ffffff;
+    padding: 60px 0;
+}
+
+/* SECTION LAYOUT */
+.section {
+    max-width: 1400px;
+    margin: 0 auto 120px;
+    padding: 0 60px;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* EVEN SECTIONS */
+.section.reverse {
+    grid-template-columns: 1fr 1.1fr;
+}
+
+.section.reverse .image {
+    order: 2;
+}
+
+/* IMAGE */
+.image {
+    height: 520px;
+    border-radius: 28px;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* CONTENT */
+.content small {
+    display: inline-block;
+    background: rgba(255,255,255,0.08);
+    padding: 8px 14px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.content h2 {
+    font-size: 44px;
+    margin-bottom: 14px;
+    font-weight: 500;
+}
+
+.content p {
+    max-width: 500px;
+    color: #bfc6cc;
+    line-height: 1.7;
+    margin-bottom: 26px;
+}
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.btn {
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn.primary {
+    background: linear-gradient(135deg, #6ee7b7, #3b82f6);
+    color: #000;
+}
+
+.btn.secondary {
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #fff;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .section,
+    .section.reverse {
+        grid-template-columns: 1fr;
+    }
+
+    .image {
+        height: 360px;
+    }
+
+    .section.reverse .image {
+        order: 0;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- SECTION 1 -->
+<section class="section">
+    <div class="image">
+        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216">
+    </div>
+    <div class="content">
+        <small>Project 01</small>
+        <h2>Define Your Vision</h2>
+        <p>We start by understanding goals, audience, and brand direction to form a strong creative foundation.</p>
+        <div class="buttons">
+            <a class="btn primary">View Project</a>
+            <a class="btn secondary">Details</a>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 2 -->
+<section class="section reverse">
+    <div class="image">
+        <img src="https://images.unsplash.com/photo-1558655146-d09347e92766">
+    </div>
+    <div class="content">
+        <small>Project 02</small>
+        <h2>Research & Strategy</h2>
+        <p>We analyze competitors, trends, and user behavior to build a data-driven design strategy.</p>
+        <div class="buttons">
+            <a class="btn primary">View Project</a>
+            <a class="btn secondary">Details</a>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 3 -->
+<section class="section">
+    <div class="image">
+        <img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc">
+    </div>
+    <div class="content">
+        <small>Project 03</small>
+        <h2>Wireframing</h2>
+        <p>Low-fidelity wireframes help visualize structure and user flow before design execution.</p>
+        <div class="buttons">
+            <a class="btn primary">View Project</a>
+            <a class="btn secondary">Details</a>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 4 -->
+<section class="section reverse">
+    <div class="image">
+        <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698">
+    </div>
+    <div class="content">
+        <small>Project 04</small>
+        <h2>Visual Design</h2>
+        <p>High-fidelity visuals are crafted using natural colors, typography, and spacing.</p>
+        <div class="buttons">
+            <a class="btn primary">View Project</a>
+            <a class="btn secondary">Details</a>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 5 -->
+<section class="section">
+    <div class="image">
+        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6">
+    </div>
+    <div class="content">
+        <small>Project 05</small>
+        <h2>Development</h2>
+        <p>Designs are transformed into clean, responsive, and high-performance code.</p>
+        <div class="buttons">
+            <a class="btn primary">View Project</a>
+            <a class="btn secondary">Details</a>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 6 -->
+<section class="section reverse">
+    <div class="image">
+        <img src="https://images.unsplash.com/photo-1611078489935-0cb964de46b0">
+    </div>
+    <div class="content">
+        <small>Project 06</small>
+        <h2>Testing & Review</h2>
+        <p>Thorough testing ensures performance, usability, and cross-platform consistency.</p>
+        <div class="buttons">
+            <a class="btn primary">View Project</a>
+            <a class="btn secondary">Details</a>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 7 -->
+<section class="section">
+    <div class="image">
+        <img src="bicycle.png">
+    </div>
+    <div class="content">
+        <small>Project 07</small>
+        <h2>Bicycle Management systems</h2>
+        <p>A web-based system to manage bicycle inventory, rentals, users, and maintenance efficiently.</p>
+        <div class="buttons">
+            <a href="https://www.linkedin.com/posts/jannatul-ferdaues-soha-6854a2252_bicycle-management-system-for-using-diu-bicycle-activity-7319394718654636032-E3Iy?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD5dS0UBtKBM1IHle1Ft3emuz2kAcwb_M1o" class="btn primary">View Project</a>
+            <a href="https://github.com/jannatul-fredaues/Bicycle_Management" class="btn secondary">Details</a>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
